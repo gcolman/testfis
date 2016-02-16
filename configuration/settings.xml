@@ -25,7 +25,7 @@
       <id>fusesource.repo</id>
       <repositories>
         <repository>
-          <id>openshift.local/id>
+          <id>openshift.local</id>
           <name>Openshift local</name>
           <url>http://localhost:8081/nexus/content/groups/public</url>
           <snapshots>
@@ -75,7 +75,7 @@
       </repositories>
       <pluginRepositories>
         <pluginRepository>
-          <id>openshift.local/id>
+          <id>openshift.local</id>
           <name>Openshift local</name>
           <url>http://localhost:8081/nexus/content/groups/public</url>
           <snapshots>
