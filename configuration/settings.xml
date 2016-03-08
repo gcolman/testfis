@@ -24,6 +24,22 @@
     <profile>
       <id>fusesource.repo</id>
       <repositories>
+
+
+
+	<repository>
+          <id>openshift.local</id>
+          <name>openshift.local</name>
+          <url>http://192.168.122.1:8081/nexus/content/groups/public/</url>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </repository>
+
         <repository>
           <id>fusesource.m2</id>
           <name>FuseSource Community Release Repository</name>
@@ -62,6 +78,21 @@
         </repository>
       </repositories>
       <pluginRepositories>
+
+        <pluginRepository>
+          <id>openshift.local</id>
+          <name>openshift.local</name>
+          <url>http://192.168.122.1:8081/nexus/content/groups/public/</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+          </releases>
+        </pluginRepository>
+
+
         <pluginRepository>
           <id>fusesource.m2</id>
           <name>FuseSource Community Release Repository</name>
