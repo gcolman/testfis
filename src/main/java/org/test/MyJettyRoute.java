@@ -39,8 +39,11 @@ public class MyJettyRoute extends RouteBuilder {
             .choice()
                 .when(header("name"))
                     .transform(simple("Hello ${header.name} I am ${sysenv.HOSTNAME} how are you?"))
+		    .log("running through this broker")
                 .otherwise()
+		    .log("running through this broker")
                     .transform(constant("Add a name parameter to uri, eg ?name=foo"));
-    }
+   	  		 
+   }
 
 }
