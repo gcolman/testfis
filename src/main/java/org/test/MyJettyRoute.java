@@ -39,10 +39,8 @@ public class MyJettyRoute extends RouteBuilder {
             .choice()
                 .when(header("name"))
                     .transform(simple("Hello ${header.name} I am ${sysenv.HOSTNAME} how are you?"))
-		    .to("http://www.google.com?bridgeEndpoint=true")
 		    .log("${body}")
                 .otherwise()
-		    .to("http://www.google.com")
 		    .log("${body}")	
                     .transform(constant("Add a name parameter to uri, eg ?name=foo"));
    	  		 
