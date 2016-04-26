@@ -8,12 +8,12 @@
       "iconClass": "icon-java"
     },
     "labels": {},
-    "name": "s2i-quickstart-cdi-camel-jetty"
+    "name": "estafet-camel-jetty"
   },
   "parameters": [
     {
       "name": "APP_NAME",
-      "value": "s2i-quickstart-cdi-camel-jetty",
+      "value": "estafet-camel-jetty",
       "description": "Application Name"
     },
     {
@@ -28,7 +28,7 @@
     },
     {
       "name": "SERVICE_NAME",
-      "value": "s2i-qs-cdi-camel-jetty",
+      "value": "estafet-camel-jetty",
       "description": "Exposed Service name"
     },
     {
