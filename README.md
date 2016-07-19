@@ -1,4 +1,4 @@
-# CDI Camel Jetty QuickStart
+# Graeme's CDI Camel Jetty QuickStart
 
 This example shows how to work with Camel in the Java Container using CDI to configure components,
 endpoints and beans.
