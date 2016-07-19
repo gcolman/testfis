@@ -8,7 +8,7 @@
       "iconClass": "icon-java"
     },
     "labels": {},
-    "name": "estafet-camel-jetty"
+    "name": "gibraltar-camel-jetty"
   },
   "parameters": [
     {
