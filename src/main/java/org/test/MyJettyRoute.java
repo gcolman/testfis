@@ -38,7 +38,7 @@ public class MyJettyRoute extends RouteBuilder {
         from(jettyEndpoint)
             .choice()
                 .when(header("name"))
-                    .transform(simple("Hello ${header.name} I am ${sysenv.HOSTNAME} how are you?"))
+                    .transform(simple("Hello GIBRALTAR ${header.name} I am ${sysenv.HOSTNAME} how are you?"))
 		    .log("${body}")
                 .otherwise()
 		    .log("${body}")	
