@@ -8,12 +8,12 @@
       "iconClass": "icon-java"
     },
     "labels": {},
-    "name": "gibraltar-camel-jetty"
+    "name": "mns-camel-jetty"
   },
   "parameters": [
     {
       "name": "APP_NAME",
-      "value": "estafet-camel-jetty",
+      "value": "mns-camel-jetty",
       "description": "Application Name"
     },
     {
@@ -28,7 +28,7 @@
     },
     {
       "name": "SERVICE_NAME",
-      "value": "estafet-camel-jetty",
+      "value": "mns-camel-jetty",
       "description": "Exposed Service name"
     },
     {
