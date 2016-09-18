@@ -30,7 +30,7 @@
 	<repository>
           <id>openshift.local</id>
           <name>openshift.local</name>
-          <url>http://192.168.42.39:8081/nexus/content/groups/public/</url>
+          <url>http://10.1.2.1:8081/nexus/content/groups/public/</url>
           <snapshots>
             <enabled>true</enabled>
           </snapshots>
