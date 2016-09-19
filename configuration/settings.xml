@@ -82,7 +82,7 @@
         <pluginRepository>
           <id>openshift.local</id>
           <name>openshift.local</name>
-          <url>http://192.168.122.1:8081/nexus/content/groups/public/</url>
+          <url>http://10.1.2.1:8081/nexus/content/groups/public/</url>
           <snapshots>
             <enabled>false</enabled>
           </snapshots>
