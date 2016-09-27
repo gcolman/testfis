@@ -42,7 +42,7 @@ public class MyJettyRoute extends RouteBuilder {
 		    .log("${body}")
                 .otherwise()
 		    .log("${body}")	
-                    .transform(simple(""));
+                    .transform(simple(" {'pod':'${sysenv.HOSTNAME}' , 'colour' : 'green', 'checked':0 }"));
    	  		 
    }
 
