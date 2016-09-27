@@ -42,7 +42,7 @@ public class MyJettyRoute extends RouteBuilder {
 		    .log("${body}")
                 .otherwise()
 		    .log("${body}")	
-                    .transform(constant("Add a name parameter to uri, eg ?name=foo"));
+                    .transform(constant("{\"pod\":\"${sysenv.HOSTNAME}\",\"colour\":\"green\", \"checked\":0}");
    	  		 
    }
 
