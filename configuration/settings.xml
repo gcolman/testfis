@@ -30,7 +30,8 @@
 	<repository>
           <id>openshift.local</id>
           <name>openshift.local</name>
-          <url>http://10.1.2.1:8081/repository/maven-public/</url>
+          <!-- <url>http://10.1.2.1:8081/repository/maven-public/</url> -->
+		<url>http://nexus-ci.apps.redhatforum.co.uk/content/groups/public/</url>
           <snapshots>
             <enabled>true</enabled>
           </snapshots>
@@ -82,7 +83,8 @@
         <pluginRepository>
           <id>openshift.local</id>
           <name>openshift.local</name>
-          <url>http://10.1.2.1:8081/repository/maven-public/</url>
+          <!-- <url>http://10.1.2.1:8081/repository/maven-public/</url> -->
+	  <url>http://nexus-ci.apps.redhatforum.co.uk/content/groups/public/</url>
           <snapshots>
             <enabled>false</enabled>
           </snapshots>
