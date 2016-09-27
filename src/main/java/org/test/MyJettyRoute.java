@@ -28,7 +28,7 @@ import org.apache.camel.cdi.Uri;
 @ContextName("myJettyCamel")
 public class MyJettyRoute extends RouteBuilder {
 
-    @Inject @Uri("jetty:http://0.0.0.0:8080/forum");
+    @Inject @Uri("jetty:http://0.0.0.0:8080/forum")
     private Endpoint jettyEndpoint;
 
     @Override
@@ -38,11 +38,11 @@ public class MyJettyRoute extends RouteBuilder {
         from(jettyEndpoint)
             .choice()
                 .when(header("name"))
-                    .transform(simple("{'pod': '${sysenv.HOSTNAME}', 'colour':'green', 'checked':0}"))
+                    .transform(simple("\{ 'pod':'${sysenv.HOSTNAME}' , 'colour' : 'green', 'checked':0 \}"))
 		    .log("${body}")
                 .otherwise()
 		    .log("${body}")	
-                    .transform(simple("{\"pod\":\"" +${sysenv.HOSTNAME} +"\",\"colour\":\"green\", \"checked\":0}"));
+                    .transform(simple("\{\"pod\":\"${sysenv.HOSTNAME}\",\"colour\":\"green\", \"checked\":0\}"));
    	  		 
    }
 
