@@ -38,11 +38,11 @@ public class MyJettyRoute extends RouteBuilder {
         from(jettyEndpoint)
             .choice()
                 .when(header("name"))
-                    .transform(simple("{\"pod\":\"${sysenv.HOSTNAME\" , \"colour\" : \"green\", \"checked\":0 }"))
+                    .transform(simple("{\"pod\":\"${sysenv.HOSTNAME}\" , \"colour\" : \"green\", \"checked\":0 }"))
 		    .log("${body}")
                 .otherwise()
 		    .log("${body}")	
-                    .transform(simple("{\"pod\":\"${sysenv.HOSTNAME\" , \"colour\" : \"green\", \"checked\":0 }"));
+                    .transform(simple("{\"pod\":\"${sysenv.HOSTNAME}\" , \"colour\" : \"green\", \"checked\":0 }"));
    	  		 
    }
 
